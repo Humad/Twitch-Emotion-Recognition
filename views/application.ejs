@@ -1,0 +1,49 @@
+<html>
+    <head>
+        <title>Twitch Emotion Recognition</title>
+
+        <link rel="stylesheet" type="text/css" href="/stylesheets/mystyle.css">
+        <link rel="stylesheet" type="text/css" href="/stylesheets/bootstrap.min.css">
+
+    </head>
+
+    <body>
+        <div class="container-fluid">
+
+            <div class="row" id="main-container">
+
+                <div class="col-md-7 col-xs-12" id="twitch-embed"></div>
+
+                <div class="col-md-5 col-xs-12" id="aff-detection"></div>
+            </div>
+
+            <div class="row" id="status-container">
+                <div class="col-md-3 col-xs-6" id="status">
+                    <h3>Status:</h3>
+                </div>
+
+                <div class="col-md-2 col-xs-6">
+                    <button class="btn btn-primary" id="start-button">
+                        Start
+                    </button>
+
+                    <button class="btn btn-danger" id="results-button">
+                        Stop and See Results
+                    </button>
+
+                    <p>Faces detected: <span id="num-faces">0</span></p>
+                </div>
+
+                <div class="col-md-7 col-xs-6" id="aff-graph"></div>
+            </div>
+        </div>
+
+        <script src="https://download.affectiva.com/js/3.2/affdex.js"></script>
+        <script src= "http://player.twitch.tv/js/embed/v1.js"></script>
+        <script src="/js/jquery-3.2.1.min.js"></script>
+        <script src="/js/googleGraphs.js"></script>
+        <script src="/js/myScript.js"></script>
+        <script src="/js/graphGeneration.js"></script>
+        <script src="/js/affectDetection.js"></script>
+    </body>
+</html>

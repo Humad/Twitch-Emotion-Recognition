@@ -1,0 +1,11 @@
+#main-container {
+    height: 70%;
+}
+
+#status-container {
+    height: 30%;
+}
+
+#status {
+    overflow: scroll;
+}
