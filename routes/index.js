@@ -9,7 +9,7 @@ router.get('/', function(req, res) {
 
 router.post('/application', function(req, res) {
     console.log(req.body.twitchLink);
-  res.render('application', {twitchLink : req.body.twitchLink});
+    res.render('application', {twitchLink : req.body.twitchLink});
 });
 
 router.get('/results', function(req, res) {
