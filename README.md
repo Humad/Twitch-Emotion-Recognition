@@ -1,5 +1,6 @@
-# Emotion Recognition
+# Twitch Emotion Recognition
 An online tool that recognizes user emotions as they watch a Twitch stream.
+You can find the [live version here](https://twitch-emotion-recognition.herokuapp.com/).
 
 # Introduction
 This project is a tool that makes use of the Affectiva API to detect the emotions of a user using video feed from their camera as they watch a Twitch stream.
@@ -21,6 +22,17 @@ All the emotion recognition work is being done in the browser by the Affectiva A
 
 Here are some sample screenshots of my sister and myself testing the tool:
 
+Testing joy,
+
+![Joy test](/sample-screenshots/joy-test.png?raw=true "Joy test")
+
+Testing surprise,
+
+![Surprise-test](/sample-screenshots/surprise-test.png?raw=true "Surprise test")
+
+Testing anger,
+
+![Anger-test](/sample-screenshots/anger-test.png?raw=true "Anger test")
 
 # Limitations
 - As of now, I can't store data for viewing later. I could save data to a database, but I don't want everyone's data to be available to everyone, and so I need to have some form of authentication in place.
