@@ -2,7 +2,7 @@
     <head>
         <title>Twitch Emotion Recognition</title>
 
-        <link rel="stylesheet" type="text/css" href="/stylesheets/mystyle.css">
+        <link rel="stylesheet" type="text/css" href="/stylesheets/appStyle.css">
         <link rel="stylesheet" type="text/css" href="/stylesheets/bootstrap.min.css">
 
     </head>
@@ -11,9 +11,7 @@
         <div class="container-fluid">
 
             <div class="row" id="main-container">
-
                 <div class="col-md-7 col-xs-12" id="twitch-embed"></div>
-
                 <div class="col-md-5 col-xs-12" id="aff-detection"></div>
             </div>
 
@@ -27,9 +25,11 @@
                         Start
                     </button>
 
+                    <!--
                     <button class="btn btn-danger" id="results-button">
                         Stop and See Results
                     </button>
+                    -->
 
                     <p>Faces detected: <span id="num-faces">0</span></p>
                 </div>
@@ -42,7 +42,9 @@
         <script src= "http://player.twitch.tv/js/embed/v1.js"></script>
         <script src="/js/jquery-3.2.1.min.js"></script>
         <script src="/js/googleGraphs.js"></script>
-        <script src="/js/myScript.js"></script>
+        <script>var twitchLink = <%- JSON.stringify(twitchLink) %></script>
+        <script>console.log(twitchLink)</script>
+        <script src="/js/appScript.js"></script>
         <script src="/js/graphGeneration.js"></script>
         <script src="/js/affectDetection.js"></script>
     </body>

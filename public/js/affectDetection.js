@@ -2,7 +2,6 @@ var divRoot = $("#aff-detection")[0];
 var width = $("#aff-detection").width();
 var height = $("#aff-detection").height();
 var faceMode = affdex.FaceDetectorMode.LARGE_FACES;
-var statusLog = $("#status");
 
 var detector = new affdex.CameraDetector(divRoot, width, height, faceMode);
 
@@ -18,7 +17,7 @@ detector.addEventListener("onInitializeFailure", function() {
 
 detector.addEventListener("onWebcamConnectSuccess", function() {
     statusLog.append("<p>Connected to camera</p>");
-    console.log("Connected to camera");
+    statusLog.append("<p>Initializing detector</p>");
     $("#face_video").css("display", "none");
 });
 
@@ -45,6 +44,8 @@ detector.addEventListener("onImageResultsSuccess", function(faces, image, timest
             chartData[count][1] = Number(faces[0].emotions[key].toFixed(0));
             count++;
         }
+        console.log(player.getCurrentTime());
+        saveData(chartData);
 
     } else {
 
@@ -72,6 +73,13 @@ function drawFeaturePoints(img, featurePoints) {
       contxt.arc(featurePoints[id].x,
         featurePoints[id].y, 2, 0, 2 * Math.PI);
       contxt.stroke();
+    }
+}
+
+function saveData(chartData){
+    var currentTime = player.getCurrentTime();
+    if (!savedData.hasOwnProperty("" + currentTime)) {
+        savedData["" + currentTime] = chartData.slice(0);
     }
 }
 
