@@ -2,7 +2,7 @@
 An online tool that recognizes user emotions as they watch a Twitch stream.
 You can find the [live version here](https://twitch-emotion-recognition.herokuapp.com/).
 
-*Note* : This project has since been turned into a full stack application using Django. You can view the [repo here] (https://github.com/Humad/reelfeels).
+*Note* : This project has since been turned into a full stack application using Django. You can view the [repo here](https://github.com/Humad/reelfeels).
 
 # Introduction
 This project is a tool that makes use of the Affectiva API to detect the emotions of a user using video feed from their camera as they watch a Twitch stream.
@@ -37,5 +37,5 @@ Testing anger,
 ![Anger-test](/sample-screenshots/anger-test.png?raw=true "Anger test")
 
 # Limitations
-- As of now, I can't store data for viewing later. I could save data to a database, but I don't want everyone's data to be available to everyone, and so I need to have some form of authentication in place.
-- I want to add functionality to see your results after you're done watching the stream so you can view your emotions during different points in the stream. The problem here is that the Twitch API doesn't allow me to get the current time of the livestream from the time it went live. It also doesn't give me access to rewind the stream programmatically. Perhaps I could have a page with timestamps and screenshots, along with a chart instead.
+- ~As of now, I can't store data for viewing later. I could save data to a database, but I don't want everyone's data to be available to everyone, and so I need to have some form of authentication in place.~
+- ~I want to add functionality to see your results after you're done watching the stream so you can view your emotions during different points in the stream. The problem here is that the Twitch API doesn't allow me to get the current time of the livestream from the time it went live. It also doesn't give me access to rewind the stream programmatically. Perhaps I could have a page with timestamps and screenshots, along with a chart instead.~
