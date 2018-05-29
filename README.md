@@ -2,6 +2,8 @@
 An online tool that recognizes user emotions as they watch a Twitch stream.
 You can find the [live version here](https://twitch-emotion-recognition.herokuapp.com/).
 
+*Note* : This project has since been turned into a full stack application using Django. You can view the [repo here] (https://github.com/Humad/reelfeels).
+
 # Introduction
 This project is a tool that makes use of the Affectiva API to detect the emotions of a user using video feed from their camera as they watch a Twitch stream.
 The idea behind this tool is to help content creators discover what the users felt while watching their content. Having a better insight into what the user experienced can help content creators improve.
